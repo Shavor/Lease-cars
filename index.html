@@ -1,268 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lease-cars</title>
-    <link href="https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/aos.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/aos.css" />
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.4.min.js"></script>
-    
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="wrapper">
-<!-- header -->
-        <header class="header header__main" id="header">
-            <div class="container">
-                <div class="header__inner">
-                    <a class="header__logo" href="index.html" >
-                        <img src="/images/header-logo.svg" alt="header-logo">
-                    </a>
+      <!-- header -->
+      <header class="header header__main" id="header">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo" href="index.html">
+              <img src="/images/header-logo.svg" alt="header-logo" />
+            </a>
 
-                    <nav class="menu" id="nav">
-                        <ul class="menu__list" data-aos="fade-left">
-                            <li class="menu__list-item" >
-                                <a href="/new-car.html" class="menu__list-link" data-scroll="newcars" >NEW CARS</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a href="#" class="menu__list-link" data-scroll="preownedcars">PRE-OWNED CARS</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a href="#" class="menu__list-link" data-scroll="finance">FINANCE</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a href="#" class="menu__list-link" data-scroll="leasebuy">LEASE VS BUY</a>
-                            </li>
-                            <li class="menu__list-item">
-                                <a href="contact.html" class="menu__list-link" data-scroll="contact">CONTACT US</a>
-                            </li>
-                        </ul>
+            <nav class="menu" id="nav">
+              <ul class="menu__list" data-aos="fade-left">
+                <li class="menu__list-item">
+                  <a
+                    href="/new-car.html"
+                    class="menu__list-link"
+                    data-scroll="newcars"
+                    >NEW CARS</a
+                  >
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-link" data-scroll="preownedcars"
+                    >PRE-OWNED CARS</a
+                  >
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-link" data-scroll="finance"
+                    >FINANCE</a
+                  >
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-link" data-scroll="leasebuy"
+                    >LEASE VS BUY</a
+                  >
+                </li>
+                <li class="menu__list-item">
+                  <a
+                    href="contact.html"
+                    class="menu__list-link"
+                    data-scroll="contact"
+                    >CONTACT US</a
+                  >
+                </li>
+              </ul>
 
-                        <div class="menu__store">
-                            <a class="menu__store-app" href="#">
-                                <img src="/images/App-store.svg" alt="">
-                            </a>
-                            <a class="menu__store-goole" href="#">
-                                <img src="/images/Goole-store.svg" alt="">
-                            </a>
-                        </div>
-                    </nav> <!-- /menu -->
+              <div class="menu__store">
+                <a class="menu__store-app" href="#">
+                  <img src="/images/App-store.svg" alt="" />
+                </a>
+                <a class="menu__store-goole" href="#">
+                  <img src="/images/Goole-store.svg" alt="" />
+                </a>
+              </div>
+            </nav>
+            <!-- /menu -->
 
-                    <button class="burger" type="button" id="navToggle">
-                        <span class="burger__line">1</span>
-                        <span class="burger__line">2</span>
-                        <span class="burger__line">3</span>
-                        <span class="burger__line">4</span>
-                    </button>
+            <button class="burger" type="button" id="navToggle">
+              <span class="burger__line">1</span>
+              <span class="burger__line">2</span>
+              <span class="burger__line">3</span>
+              <span class="burger__line">4</span>
+            </button>
+          </div>
+          <!-- /header__inner -->
+        </div>
+        <!-- /Container -->
+      </header>
 
-                </div> <!-- /header__inner -->
-            </div> <!-- /Container -->
-        </header>
+      <main class="main">
+        <!-- Top -->
+        <section class="top">
+          <div class="container">
+            <h1 class="top__title" data-aos="fade-down">Leasing From D&M</h1>
 
-        <main class="main">
-<!-- Top -->
-            <section class="top">
-                <div class="container">
-                    <h1 class="top__title" data-aos="fade-down">Leasing From D&M</h1>
+            <a href="/new-car.html" class="top__link">FIND A CAR</a>
+          </div>
+        </section>
+        <!-- slider -->
+        <div class="slider" id="slider">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div
+                class="swiper-slide"
+                style="background-image: url(/images/car1.jpg)"
+              ></div>
+              <div
+                class="swiper-slide"
+                style="background-image: url(/images/car2.jpg)"
+              ></div>
+              <div
+                class="swiper-slide"
+                style="background-image: url(/images/car3.jpg)"
+              ></div>
+              <div
+                class="swiper-slide"
+                style="background-image: url(/images/car4.jpg)"
+              ></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <!-- /slider -->
+        <!-- lease -->
+        <section class="lease" id="lease">
+          <div class="container">
+            <div class="lease__inner">
+              <h1 class="title lease__title" data-aos="fade-down">
+                Why Lease with D&M?
+              </h1>
 
-                    <a href="/new-car.html" class="top__link">FIND A CAR</a>
+              <div class="lease__box">
+                <div
+                  class="lease__box-item"
+                  data-aos="fade-down"
+                  data-aos-duration="200"
+                >
+                  <a href="#" class="lease__box-link">
+                    <img
+                      class="lease__box-img"
+                      src="/images/lease-1.svg"
+                      alt="Dealers"
+                    />
+                  </a>
+
+                  <h2 class="lease__box-title">Top Dealers</h2>
+                  <p class="lease__box-text">
+                    TrueCar Certified Dealers compete for your business by
+                    providing discounted pricing on in-stock inventory.
+                  </p>
                 </div>
-            </section>
-<!-- slider -->
-            <div class="slider" id="slider">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide" style="background-image: url(/images/car1.jpg);"></div>
-                        <div class="swiper-slide" style="background-image: url(/images/car2.jpg);"></div>
-                        <div class="swiper-slide" style="background-image: url(/images/car3.jpg);"></div>
-                        <div class="swiper-slide" style="background-image: url(/images/car4.jpg);"></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
+                <div
+                  class="lease__box-item"
+                  data-aos="fade-down"
+                  data-aos-duration="500"
+                >
+                  <a href="#" class="lease__box-link">
+                    <img
+                      class="lease__box-img"
+                      src="/images/lease-2.svg"
+                      alt="Pricing"
+                    />
+                  </a>
+
+                  <h2 class="lease__box-title">Discounted Pricing</h2>
+                  <p class="lease__box-text">
+                    View local inventory from the comfort of home and get access
+                    to guaranteed savings on the car of your choice.
+                  </p>
                 </div>
-            </div> <!-- /slider -->
-<!-- lease -->
-            <section class="lease" id="lease">
-                <div class="container">
-                    <div class="lease__inner">
-                        <h1 class="title lease__title" data-aos="fade-down">Why Lease with D&M?</h1>
+                <div
+                  class="lease__box-item"
+                  data-aos="fade-down"
+                  data-aos-duration="800"
+                >
+                  <a href="#" class="lease__box-link">
+                    <img
+                      class="lease__box-img"
+                      src="/images/lease-3.svg"
+                      alt="Payments"
+                    />
+                  </a>
 
-                        <div class="lease__box">
-                            <div class="lease__box-item" data-aos="fade-down" data-aos-duration="200">
-                                <a href="#" class="lease__box-link">
-                                    <img class="lease__box-img" src="/images/lease-1.svg" alt="Dealers">
-                                </a>
-
-                                <h2 class="lease__box-title">Top Dealers</h2>
-                                <p class="lease__box-text">TrueCar Certified Dealers compete for your business by providing discounted pricing on in-stock inventory.</p>
-                            </div>
-                            <div class="lease__box-item" data-aos="fade-down" data-aos-duration="500">
-                                <a href="#" class="lease__box-link">
-                                    <img class="lease__box-img" src="/images/lease-2.svg" alt="Pricing">
-                                </a>
-
-                                <h2 class="lease__box-title">Discounted Pricing</h2>
-                                <p class="lease__box-text">View local inventory from the comfort of home and get access to guaranteed savings on the car of your choice.</p>
-                            </div>
-                            <div class="lease__box-item" data-aos="fade-down" data-aos-duration="800">
-                                <a href="#" class="lease__box-link">
-                                    <img class="lease__box-img" src="/images/lease-3.svg" alt="Payments">
-                                </a>
-
-                                <h2 class="lease__box-title">Lower Payments</h2>
-                                <p class="lease__box-text">Get discounted pricing when you shop for a car or truck using TrueCar and save on your lease payment.</p>
-                            </div>
-                            <div class="lease__box-item" data-aos="fade-down" data-aos-duration="1100">
-                                <a href="#" class="lease__box-link">
-                                    <img class="lease__box-img" src="/images/lease-4.svg" alt="Upgrade">
-                                </a>
-
-                                <h2 class="lease__box-title">Easy Upgrade</h2>
-                                <p class="lease__box-text">Easy to upgrade to the newest vehicle model every few years if you would like to be modern and comfortable</p>
-                            </div>
-                        </div>
-                        
-                    </div>
+                  <h2 class="lease__box-title">Lower Payments</h2>
+                  <p class="lease__box-text">
+                    Get discounted pricing when you shop for a car or truck
+                    using TrueCar and save on your lease payment.
+                  </p>
                 </div>
-            </section>
-<!-- howdoes -->
-            <section class="howdoes">
-                <div class="container">
-                    <div class="howdoes__inner">
-                        <h1 class="title howdoes-title" data-aos="fade-down">How Does Leasing Work?</h1>
+                <div
+                  class="lease__box-item"
+                  data-aos="fade-down"
+                  data-aos-duration="1100"
+                >
+                  <a href="#" class="lease__box-link">
+                    <img
+                      class="lease__box-img"
+                      src="/images/lease-4.svg"
+                      alt="Upgrade"
+                    />
+                  </a>
 
-                        <p class="howdoes__text">Leasing a vehicle is essentially entering into a long term rental agreement for that vehicle. Unlike a traditional car purchase, you don’t actually own the vehicle. Instead, a leasing company purchases the vehicle from the dealer on your behalf and then you make monthly payments to the leasing company for the duration of your lease. Some leases however, do provide the option to purchase the vehicle at the end of the lease.</p>
-                        <h2 class="howdoes__subtitle">Similar to a short term car rental, there are rules that define:</h2>
-                        <div class="howdoes__box">
-                            <div class=" howdoes__box-item" data-aos="fade-left" data-aos-duration="200">
-                                <p class="howdoes__box-text">How much you can drive, stated as annual miles (excess miles are charged at a specified rate)</p>
-                            </div>
-                            <div class="howdoes__box-item" data-aos="fade-left" data-aos-duration="400">
-                                <p class="howdoes__box-text">Types of damage that you may be liable for at the end of your lease</p>
-                            </div>
-                            <div class="howdoes__box-item" data-aos="fade-left" data-aos-duration="600">
-                                <p class="howdoes__box-text">The procedures and costs when you return the vehicle at the end of your lease</p>
-                            </div>
-                        </div>
-                        <p class="howdoes__text">Lease contracts are a commitment and ending them early can be difficult and expensive so it is important to consider your circumstances carefully before you decide.</p>
-                    </div>
+                  <h2 class="lease__box-title">Easy Upgrade</h2>
+                  <p class="lease__box-text">
+                    Easy to upgrade to the newest vehicle model every few years
+                    if you would like to be modern and comfortable
+                  </p>
                 </div>
-            </section>
-<!-- welcome -->
-            <section class="welcome">
-                <div class="container">
-                    <h1 class="title welcome-title" data-aos="fade-down">WELCOME TO D&M LEASING</h1>
-                    <p class="welcome-text">Find out how easy it is to lease from D&M</p>
-                    <iframe class="welcome__video" width="1000" height="500" src="https://www.youtube.com/embed/hQJu9vBW_74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- howdoes -->
+        <section class="howdoes">
+          <div class="container">
+            <div class="howdoes__inner">
+              <h1 class="title howdoes-title" data-aos="fade-down">
+                How Does Leasing Work?
+              </h1>
+
+              <p class="howdoes__text">
+                Leasing a vehicle is essentially entering into a long term
+                rental agreement for that vehicle. Unlike a traditional car
+                purchase, you don’t actually own the vehicle. Instead, a leasing
+                company purchases the vehicle from the dealer on your behalf and
+                then you make monthly payments to the leasing company for the
+                duration of your lease. Some leases however, do provide the
+                option to purchase the vehicle at the end of the lease.
+              </p>
+              <h2 class="howdoes__subtitle">
+                Similar to a short term car rental, there are rules that define:
+              </h2>
+              <div class="howdoes__box">
+                <div
+                  class="howdoes__box-item"
+                  data-aos="fade-left"
+                  data-aos-duration="200"
+                >
+                  <p class="howdoes__box-text">
+                    How much you can drive, stated as annual miles (excess miles
+                    are charged at a specified rate)
+                  </p>
                 </div>
-            </section>
-<!-- important -->
-            <section class="important">
-                <div class="container">
-                    <h1 class="title impotant__title" data-aos="fade-down">Important Things to Consider</h1>
-                    <p class="important__text">Depending on your circumstances and what is important to you, a lease could be a great option for your next vehicle. Below are some important factors that may influence your decision.</p>
-                
-                    <div class="important__box">
-                        <div class="important__title" data-aos="fade-down" data-aos-duration="200">
-                            <a href="" class="important__link">
-                                <img class="important__box-img" src="/images/important-1.jpg" alt="">
-                            </a>
-
-                            <p class="important__text">Monthly payments on leases are generally 20% - 30% cheaper than loans</p>
-                        </div>
-                        <div class="important__title" data-aos="fade-down" data-aos-duration="500">
-                            <a href="" class="important__link">
-                                <img class="important__box-img" src="/images/important-2.jpg" alt="">
-                            </a>
-
-                            <p class="important__text">Monthly payments on leases are generally 20% - 30% cheaper than loans</p>
-                        </div>
-                        <div class="important__title" data-aos="fade-down" data-aos-duration="800">
-                            <a href="" class="important__link">
-                                <img class="important__box-img" src="/images/important-3.jpg" alt="">
-                            </a>
-
-                            <p class="important__text">Monthly payments on leases are generally 20% - 30% cheaper than loans</p>
-                        </div>
-                        <div class="important__title" data-aos="fade-down" data-aos-duration="1100">
-                            <a href="" class="important__link">
-                                <img class="important__box-img" src="/images/important-4.jpg" alt="">
-                            </a>
-
-                            <p class="important__text">Monthly payments on leases are generally 20% - 30% cheaper than loans</p>
-                        </div>
-                    </div> <!-- important__box -->
+                <div
+                  class="howdoes__box-item"
+                  data-aos="fade-left"
+                  data-aos-duration="400"
+                >
+                  <p class="howdoes__box-text">
+                    Types of damage that you may be liable for at the end of
+                    your lease
+                  </p>
                 </div>
-            </section>
-
-        </main>
-
-<!-- Footer -->
-        <footer class="footer" id="footer">
-            <div class="container">
-                <nav class="footer__menu">
-                    <ul class="footer__menu-list">
-                        <p class="footer__menu-title">Products</p>
-                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Used</a></li>
-                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">New</a></li>
-                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Sell your car</a></li>
-                    </ul>
-                    <ul class="footer__menu-list">
-                        <p class="footer__menu-title">Resources</p>
-                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Blog</a></li>
-                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">FAQ</a></li>
-                        <li class="footer__menu-item"><a href="/contact.html" class="footer__menu-link">Contact</a></li>
-                    </ul>
-                    <ul class="footer__menu-list">
-                        <p class="footer__menu-title">Work With TrueCar</p>
-                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Dealers</a></li>
-                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Partners</a></li>
-                    </ul>
-                    <ul class="footer__menu-list">
-                        <p class="footer__menu-title">About</p>
-                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">About us</a></li>
-                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Team</a></li>
-                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Careers</a></li>
-                    </ul>
-                </nav>
-
-                <div class="footer__store">
-                    <a class="footer__store-app" href="#">
-                        <img src="/images/App-store.svg" alt="">
-                    </a>
-                    <a class="footer__store-goole" href="#">
-                        <img src="/images/Goole-store.svg" alt="">
-                    </a>
+                <div
+                  class="howdoes__box-item"
+                  data-aos="fade-left"
+                  data-aos-duration="600"
+                >
+                  <p class="howdoes__box-text">
+                    The procedures and costs when you return the vehicle at the
+                    end of your lease
+                  </p>
                 </div>
+              </div>
+              <p class="howdoes__text">
+                Lease contracts are a commitment and ending them early can be
+                difficult and expensive so it is important to consider your
+                circumstances carefully before you decide.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- welcome -->
+        <section class="welcome">
+          <div class="container">
+            <h1 class="title welcome-title" data-aos="fade-down">
+              WELCOME TO D&M LEASING
+            </h1>
+            <p class="welcome-text">
+              Find out how easy it is to lease from D&M
+            </p>
+            <iframe
+              class="welcome__video"
+              width="1000"
+              height="500"
+              src="https://www.youtube.com/embed/hQJu9vBW_74"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+        <!-- important -->
+        <section class="important">
+          <div class="container">
+            <h1 class="title impotant__title" data-aos="fade-down">
+              Important Things to Consider
+            </h1>
+            <p class="important__text">
+              Depending on your circumstances and what is important to you, a
+              lease could be a great option for your next vehicle. Below are
+              some important factors that may influence your decision.
+            </p>
 
-                <div class="footer__copy">
-                    <p class="footer__copy-text">For questions about the TrueCar Auto Buying Service please call 1-888-878-3227.
-                        Certified Dealers are contractually obligated by TrueCar to meet certain customer service requirements and complete the TrueCar Dealer Certification Program.</p>
-                    <p class="footer__copy-text">TrueCar does not broker, sell, or lease motor vehicles. Unless otherwise noted, all vehicles shown on this website are offered for sale by licensed motor vehicle dealers. All vehicles are subject to prior sale. By accessing this website, you agree to the TrueCar Terms of Service and Privacy Policy.</p>
-                </div>
+            <div class="important__box">
+              <div
+                class="important__title"
+                data-aos="fade-down"
+                data-aos-duration="200"
+              >
+                <a href="" class="important__link">
+                  <img
+                    class="important__box-img"
+                    src="/images/important-1.jpg"
+                    alt=""
+                  />
+                </a>
 
-                <nav class="copy__nav">
-                    <ul class="copy__nav-list">
-                        <li class="copy__nav-item"><a href="#" class="copy__nav-link">Terms of Service</a></li>
-                        <li class="copy__nav-item"><a href="#" class="copy__nav-link">Privacy Policy</a></li>
-                        <li class="copy__nav-item"><a href="#" class="copy__nav-link">Do Not Sell My Personal Information</a></li>
-                    </ul>
-                </nav>
-            </div> <!-- /Container -->
-        </footer>
-    </div> <!-- /wrapper -->
+                <p class="important__text">
+                  Monthly payments on leases are generally 20% - 30% cheaper
+                  than loans
+                </p>
+              </div>
+              <div
+                class="important__title"
+                data-aos="fade-down"
+                data-aos-duration="500"
+              >
+                <a href="" class="important__link">
+                  <img
+                    class="important__box-img"
+                    src="/images/important-2.jpg"
+                    alt=""
+                  />
+                </a>
 
+                <p class="important__text">
+                  Monthly payments on leases are generally 20% - 30% cheaper
+                  than loans
+                </p>
+              </div>
+              <div
+                class="important__title"
+                data-aos="fade-down"
+                data-aos-duration="800"
+              >
+                <a href="" class="important__link">
+                  <img
+                    class="important__box-img"
+                    src="/images/important-3.jpg"
+                    alt=""
+                  />
+                </a>
 
-<script src="/js/swiper-bundle.min.js"></script>
+                <p class="important__text">
+                  Monthly payments on leases are generally 20% - 30% cheaper
+                  than loans
+                </p>
+              </div>
+              <div
+                class="important__title"
+                data-aos="fade-down"
+                data-aos-duration="1100"
+              >
+                <a href="" class="important__link">
+                  <img
+                    class="important__box-img"
+                    src="/images/important-4.jpg"
+                    alt=""
+                  />
+                </a>
 
-<script src="/js/swiper.js"></script>
-<script src="/js/script.js"></script>
-<script src="/js/main.js"></script>
-<script src="js/jquery-3.6.4.min.js" ></script>
-<script src="js/aos.js" ></script>
+                <p class="important__text">
+                  Monthly payments on leases are generally 20% - 30% cheaper
+                  than loans
+                </p>
+              </div>
+            </div>
+            <!-- important__box -->
+          </div>
+        </section>
+      </main>
 
-</body>
+      <!-- Footer -->
+      <footer class="footer" id="footer">
+        <div class="container">
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <p class="footer__menu-title">Products</p>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Used</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">New</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Sell your car</a>
+              </li>
+            </ul>
+            <ul class="footer__menu-list">
+              <p class="footer__menu-title">Resources</p>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Blog</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">FAQ</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/contact.html" class="footer__menu-link">Contact</a>
+              </li>
+            </ul>
+            <ul class="footer__menu-list">
+              <p class="footer__menu-title">Work With TrueCar</p>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Dealers</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Partners</a>
+              </li>
+            </ul>
+            <ul class="footer__menu-list">
+              <p class="footer__menu-title">About</p>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">About us</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Team</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Careers</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer__store">
+            <a class="footer__store-app" href="#">
+              <img src="/images/App-store.svg" alt="" />
+            </a>
+            <a class="footer__store-goole" href="#">
+              <img src="/images/Goole-store.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="footer__copy">
+            <p class="footer__copy-text">
+              For questions about the TrueCar Auto Buying Service please call
+              1-888-878-3227. Certified Dealers are contractually obligated by
+              TrueCar to meet certain customer service requirements and complete
+              the TrueCar Dealer Certification Program.
+            </p>
+            <p class="footer__copy-text">
+              TrueCar does not broker, sell, or lease motor vehicles. Unless
+              otherwise noted, all vehicles shown on this website are offered
+              for sale by licensed motor vehicle dealers. All vehicles are
+              subject to prior sale. By accessing this website, you agree to the
+              TrueCar Terms of Service and Privacy Policy.
+            </p>
+          </div>
+
+          <nav class="copy__nav">
+            <ul class="copy__nav-list">
+              <li class="copy__nav-item">
+                <a href="#" class="copy__nav-link">Terms of Service</a>
+              </li>
+              <li class="copy__nav-item">
+                <a href="#" class="copy__nav-link">Privacy Policy</a>
+              </li>
+              <li class="copy__nav-item">
+                <a href="#" class="copy__nav-link"
+                  >Do Not Sell My Personal Information</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- /Container -->
+      </footer>
+    </div>
+    <!-- /wrapper -->
+
+    <script src="/js/swiper-bundle.min.js"></script>
+
+    <script src="/js/swiper.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/aos.js"></script>
+  </body>
 </html>
